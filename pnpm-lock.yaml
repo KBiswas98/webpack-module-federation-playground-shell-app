@@ -9,6 +9,7 @@ specifiers:
   autoprefixer: ^10.1.0
   babel-loader: ^8.2.2
   css-loader: ^6.3.0
+  dotenv-webpack: ^8.0.1
   external-remotes-plugin: ^1.0.0
   html-webpack-plugin: ^5.3.2
   postcss: ^8.2.1
@@ -35,6 +36,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.20
   babel-loader: 8.3.0_lkd654lvpl423ugsqn5olungie
   css-loader: 6.7.3_webpack@5.75.0
+  dotenv-webpack: 8.0.1_webpack@5.75.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   postcss: 8.4.20
   postcss-loader: 4.3.0_qxxfhhrl3yknjjmta266mo3u64
@@ -2208,6 +2210,27 @@ packages:
     dependencies:
       no-case: 3.0.4
       tslib: 2.4.1
+    dev: true
+
+  /dotenv-defaults/2.0.2:
+    resolution: {integrity: sha512-iOIzovWfsUHU91L5i8bJce3NYK5JXeAwH50Jh6+ARUdLiiGlYWfGw6UkzsYqaXZH/hjE/eCd/PlfM/qqyK0AMg==}
+    dependencies:
+      dotenv: 8.6.0
+    dev: true
+
+  /dotenv-webpack/8.0.1_webpack@5.75.0:
+    resolution: {integrity: sha512-CdrgfhZOnx4uB18SgaoP9XHRN2v48BbjuXQsZY5ixs5A8579NxQkmMxRtI7aTwSiSQcM2ao12Fdu+L3ZS3bG4w==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      webpack: ^4 || ^5
+    dependencies:
+      dotenv-defaults: 2.0.2
+      webpack: 5.75.0_webpack-cli@4.10.0
+    dev: true
+
+  /dotenv/8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
     dev: true
 
   /ee-first/1.1.1:
